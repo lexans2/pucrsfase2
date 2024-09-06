@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetPUCRS Serviços</title>
+  <style>
+      .bannerCabecalho{
+    cursor: pointer;
+    }
+    body {
+      background-color: #fdff9c;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      padding: 10px;
+      text-align: left;
+      margin-left: 100px;
+    }
+    header {
+      background-color: white;
+    }
+    nav {
+      display: flex; /* Usa Flexbox para o layout do menu */
+      justify-content: center; /* Centraliza os itens no contêiner */
+      align-items: center; /* Alinha os itens verticalmente no centro */
+      margin: 10px 0;
+    }
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      display: flex; /* Alinha texto e imagem lado a lado */
+      align-items: center; /* Alinha verticalmente no centro */
+    }
+    nav a img {
+      margin-left: 10px; /* Espaçamento entre o texto e a imagem */
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .login {
+      float: right;
+    }
+    footer {
+      background-color: #fdff9c;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+      padding: 20px;
+    }
+    footer a {
+      color: blue; /* cor azul */
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .sobreNos {
+      display: flex; /* Coloca a imagem e o texto lado a lado */
+      align-items: center; /* Alinha verticalmente no centro */
+      gap: 50px; /* Espaçamento entre a imagem e o texto */
+    }
+    .sobreNos p{
+    font-size: 32px;
+    
+    }
+    .Beneficios {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    .Beneficios-content {
+      margin-top: 50px; /* Adiciona a margem superior apenas ao conteúdo dentro da seção */
+      font-size: 24px;
+    }
+    .image-container {
+      display: flex; /* Torna o contêiner um flex container */
+      justify-content: center; /* Centraliza as imagens horizontalmente */
+      gap: 50px; /* Espaço entre as imagens */
+      /* Permite que as imagens se ajustem em várias linhas se necessário */
+    }
+    .image-container div {
+      text-align: center; /* Centraliza o texto abaixo das imagens */
+    }
+    .image-container img {
+      width: 70%; /* Define a largura das imagens */
+      height: auto; /* Mantém a proporção das imagens */
+    }
+    .image-container p {
+      font-size: 0.9em; /* Tamanho menor para o texto */
+      color: #555; /* Cor cinza para o texto */
+      margin: 1px 0 0; /* Margem acima do texto */
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="bannerCabecalho" onclick="voltarFunction()" src="imagens/Header.png" alt="Header" width="100%" />
+    <nav>
+      <a href="LPFASE2.html">Sobre</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="serviços.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a class="login" href="cadastro.html">
+        Cadastrar Usuário
+        <img src="imagens/image 17.png" alt="Cadastrar Usuário" />
+      </a>
+    </nav>
+  </header>
+  <main>
+    <h1>SERVIÇOS</h1>
+    <div class="sobreNos">
+      <p>
+        Com nossos profissionais experientes, o banho e tosa garantem que seu amigo fique ainda mais lindo e cheiroso.<br /><br />
+        Para sua conveniência, você pode agendar o serviço no dia e horário que preferir, seja pelo nosso site ou por telefone. <br /><br />
+        E se não puder trazer seu pet até nós, não se preocupe! Temos o serviço de tele-busca, onde buscamos e devolvemos seu pet com total segurança e conforto. Estamos sempre prontos para cuidar do seu pet com todo o amor que ele merece!
+      </p>
+      <img src="imagens/image 16.png" alt="Imagem da PetShop" width="30%" />
+    </div>
+  </main>
+  <section>
+    <div class="Beneficios">
+      <h1>Benefícios em ser um PetPUCRS!</h1>
+      <div class="Beneficios-content">
+        <p>
+         Aqui alguns dos nossos serviços, Clique agora em um dos nossos icones para agendar!
+        </p>
+        <div class="image-container">
+          <div>
+            <img src="imagens/image 22.png" alt="Imagem 1" usemap="#icon"/>
+            <p>Banho<br> A partir de R$150,00</p>
+            <map name="icon">
+              <area shape="rect" coords="0,0,170,140" href="agendamento.html" alt="">
+            </map>
+          </div>
+          <div>
+            <img src="imagens/image 23.png" alt="Imagem 2" usemap="#icon2" />
+            <p>Tosa <br>A partir de R$80,00</p>
+            <map name="icon2">
+              <area shape="rect" coords="0,0,170,140" href="agendamento.html" alt="">
+            </map>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 PUCRS Petshop. Todos os direitos reservados.</p>
+    <p>
+      <a href="#privacidade">Política de Privacidade</a> |
+      <a href="#termos">Termos de Uso</a>
+    </p>
+    <p>
+      Contato: (51) 1111-1111 |
+      <a href="mailto:pucrs@petshop.com">pucrs@petshop.com</a>
+    </p>
+    <p>Autor do site: Alexandre Almeida Fenocchio</p>
+  </footer><script>
+   function voltarFunction(){
+  window.location.href="LPFASE2.html"}</script>
+</body>
+</html>

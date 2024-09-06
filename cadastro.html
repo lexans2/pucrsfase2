@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetPUCRS Cadastro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .bannerCabecalho{
+    cursor: pointer;
+    }
+    
+    .form-container {
+      background-color: white; /* Cor de fundo da caixa de formulário */
+      padding: 20px;
+      border-radius: 10px; /* Borda arredondada */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor da caixa */
+      max-width: 400px; /* Largura máxima da caixa */
+      width: 100%; /* Largura completa até o máximo */
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px; /* Espaçamento abaixo do título */
+    }
+
+    .form-container label {
+      margin-top: 10px; /* Espaçamento acima dos rótulos */
+    }
+
+    .form-container input, .form-container button {
+      width: 100%; /* Largura completa dos inputs e botões */
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 15px; /* Bordas arredondadas */
+      border: 1px solid #ccc; /* Cor da borda dos inputs e botões */
+    }
+
+    .submitButton {
+      background-color: #fdff9c; /* Cor de fundo do botão */
+      color: black; /* Cor do texto do botão */
+      border: none; /* Remove a borda do botão */
+      cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+      font-weight: bold;
+      border-radius: 15px;
+
+    }
+.voltarButton{
+  background-color: white; /* Cor de fundo do botão */
+      color: black; /* Cor do texto do botão */
+      cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+      font-weight: bold;
+
+}
+    .submitButton:hover {
+      background-color: #e8e99c;
+    }
+
+    .gato {
+      margin-top: 30px; 
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #fdff9c;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+      padding: 20px;
+    }
+    footer a {
+      color: blue; /* cor azul */
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img class="bannerCabecalho" onclick="voltarFunction()" src="imagens/Header.png" alt="Header" width="100%" />
+  </header>
+  <center><img class="gato" src="imagens/image 20.png" alt="Gato"></center>
+  <center><div class="form-container">
+    <h2>Cadastre-se!</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Seu Email" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Sua Senha" required>
+
+      <label for="petNome">Nome do seu Pet:</label>
+      <input type="text" id="nome" name="nome" placeholder="Nome do Pet" required>
+      
+      <label for="raça">Raça:</label>
+      <input type="text" id="nome" name="nome" placeholder="Raça do Pet" required>
+
+       <label>Gênero do Pet:</label>
+      <input type="radio" id="masculino" name="genero" value="masculino">
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="feminino" name="genero" value="feminino">
+      <label for="feminino">Feminino</label> 
+      <button onclick="cadastroFunction()" class="submitButton" type="submit">Cadastrar</button>
+      <button onclick="voltarFunction()" class="voltarButton" type="text">Voltar</button></center>
+    </form>
+  </div>
+  <script>
+function voltarFunction(){
+  window.location.href="LPFASE2.html"
+}
+function cadastroFunction(){
+alert("Conta Criada com Sucesso!")
+}
+  </script>
+   <footer>
+    <p>&copy; 2024 PUCRS Petshop. Todos os direitos reservados.</p>
+    <p>
+      <a href="#privacidade">Política de Privacidade</a> |
+      <a href="#termos">Termos de Uso</a>
+    </p>
+    <p>
+      Contato: (51) 1111-1111 |
+      <a href="mailto:pucrs@petshop.com">pucrs@petshop.com</a>
+    </p>
+    <p>Autor do site: Alexandre Almeida Fenocchio</p>
+  </footer>
+  <script>
+     function voltarFunction(){
+  window.location.href="LPFASE2.html"}
+  </script>
+</body>
+</html>
