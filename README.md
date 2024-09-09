@@ -51,9 +51,3 @@ Tentei ser o mais fidedigno possível com o figma realizado na fase 1.
 Muito Obrigado!!!!
 
 Alexandre Almeida Fenocchio
-
-
-
-
-
-
